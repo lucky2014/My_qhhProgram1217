@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>弹框内容</title>
+    <style>
+    *{ margin: 0; padding: 0; list-style: none;}
+    .hide{ display: none;}
+    .popIframe{ position: fixed; left: 0; top: 0; width: 100%; height: 100%; overflow:hidden;}
+    </style>
+</head>
+<body>
+    <div style="background:#f3f3f3; width:100%; height:100%;">内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</div>
+    <div onclick="getParentContent()">关闭iframe</div>
+    <script>
+
+    function getParentContent(){
+        alert(0);
+        window.parent.closeWindow();
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+*{ margin: 0; padding: 0; font-family: 'microsoft yahei'; font-size: 14px; list-style: none; color: #383838;}
+a{ text-decoration: none; cursor: pointer;}
+.red{ color: red;}
+
+.table{ background: #fff; border-spacing: 0; border-collapse:collapse; border-left: 1px solid #e9e9e9; border-top: 1px solid #e9e9e9; text-align: center;}
+.table th,.table td{ border-right: 1px solid #e9e9e9; border-bottom: 1px solid #e9e9e9; padding:8px 0; font-size: 16px;}
+.table th{ background: #0076c1; color: #fff; padding:16px 0; font-weight: normal; font-size: 18px;}
+
+.w_1200 {
+    width: 1200px;
+    margin: 0 auto
+}
+.banner{ background: url(../imgs/banner.jpg) center top no-repeat #070b15; height: 340px;}
+.header{ overflow: hidden; padding:14px 0;}
+.header .logo{ float: left;}
+.header .logo img,.header .logo span{ display: inline-block; color: #0076c1; line-height: 46px; vertical-align: top;}
+.header .logo span{font-size: 16px; border-left: 1px solid #0076c1; margin-left: 20px; padding-left: 20px;}
+.header .phone{ float: right; line-height: 50px; font-size: 16px;}
+.header .phone span{ font-size: 16px;}
+
+.wrap{ background: url(../imgs/bg.jpg) center top repeat-y #e9e9e9; overflow: hidden;}
+.contact{ clear: both; overflow: hidden; padding-bottom: 20px;}
+.contact img{
+     float: left;
+}
+.pd20{ padding: 16px 0 40px; font-size: 16px;}
+.contact span{ float: left; padding-left: 30px; line-height: 30px; font-size: 16px;}
+
+.title{ text-align: left; padding-bottom: 26px; margin-top: 8px; font-weight: normal;}
+.title span{ background: #0076c1; color: #fff; font-size: 18px; padding: 6px 26px 10px; border-radius:8px;}
+.payType{ float: left; width: 400px; padding-bottom: 60px;}
+.payType dt{ font-weight: both; line-height: 44px; font-size: 17px; font-weight: bold;}
+.payType dd{ line-height: 26px; font-size: 16px;}
+
+.footer {
+    background: #444545;
+    color: #b2b2b2; clear: both;
+}
+
+.footer .footer-fl {
+    padding: 50px 0 33px;
+    float: left;
+    width: 750px
+}
+
+.footer .footer-fl p {
+    position: relative;
+    padding: 12px 0 12px 86px;
+    overflow: hidden;
+    zoom: 1
+}
+
+.footer .footer-fl span {
+    position: absolute;
+    left: 0;
+    padding-right: 22px;
+    font-size: 16px;
+    color: #fff
+}
+
+.footer .footer-fl a {
+    float: left;
+    padding: 3px 0 4px;
+    margin: 0 12px;
+    font-size: 14px;
+    color: #b2b2b2
+}
+
+.footer .footer-fr {
+    position: relative;
+    float: right;
+    width: 170px;
+    margin-top: 57px;
+    padding: 22px 0 100px 260px;
+    border-left: 1px solid #606161
+}
+
+.footer .footer-fr .footer-ewm {
+    position: absolute;
+    width: 120px;
+    left: 112px;
+    font: 14px/1.5
+}
+
+.footer .footer-fr .footer-ewm .img {
+    width: 120px;
+    height: 120px;
+    overflow: hidden
+}
+
+.footer .footer-fr .footer-ewm .img img {
+    width: 100%;
+    min-height: 100%
+}
+
+.footer .footer-fr .footer-ewm p {
+    padding-top: 7px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center
+}
+
+.footer .footer-fr h1 {
+    padding-top: 24px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400
+}
+
+.footer .footer-fr h2 {
+    padding-top: 2px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400
+}
+
+.footer .footer-fr p {
+    color: #9b9b9b
+}
+
+.footer .footer-cl {
+    padding: 23px 0;
+    border-top: 1px solid #606161;
+    clear: both;
+    overflow: hidden;
+    zoom: 1;
+    color: #c3c3c3;
+    line-height: 26px
+}
+.footer .footer-cl span{ color: #c3c3c3;}
+
+.footer .footer-cl .footer-cl-r {
+    float: right;
+    height: 26px
+}
+
+.footer .footer-cl .footer-cl-r .icon-ftweibo {
+    margin-right: 10px
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>云驾校客服系统</title>
+    <link rel="stylesheet" href="css/common.css" />
+</head>
+<body>
+	<div class="header">
+        <div class="mainWidth">
+            <div class="logo">云驾校客服系统</div>
+            <ul class="nav">
+                <li class="active">首页</li>
+                <li>订单管理</li>
+                <li>代理管理</li>
+                <li>用户管理</li>
+                <li>营销平台</li>
+            </ul> 
+            <div class="headerInfo"><span>ID叫智障</span><a class="exit">退出</a></div> 
+        </div>
+    </div>
+
+    <div class="wrap1">
+        <div class="flyerType"><a>我的作品</a><a class="active">模板库</a></div>
+        <div class="srcType">
+            <ul>
+                <li class="active">朋友圈图片</li>
+                <li>传单</li>
+                <li>海报</li>
+            </ul>
+        </div>
+
+        <div class="flyerList">
+            <dl>
+                <dt><a><img src="imgs/add.png" />点击打开创建</a></dt>
+                <dd>
+                    <div><img src="imgs/1.jpg" width="100%" height="350" /></div>
+                    <span>新春学车送大礼<i>免费</i></span>
+                    <div class="mask pd105">
+                        <a class="edit">编辑</a>
+                        <a class="phone">发送至手机</a>
+                    </div>
+                </dd>
+                <dd>
+                    <div><img src="imgs/1.jpg" width="100%" height="350" /></div>
+                    <span>新春学车送大礼<i>免费</i></span>
+                    <div class="mask pd105">
+                        <a class="edit">编辑</a>
+                        <a class="phone">发送至手机</a>
+                    </div>
+                </dd>
+                <dd>
+                    <div><img src="imgs/1.jpg" width="100%" height="350" /></div>
+                    <span>新春学车送大礼<i>免费</i></span>
+                    <div class="mask pd105">
+                        <a class="edit">编辑</a>
+                        <a class="phone">发送至手机</a>
+                    </div>
+                </dd>
+                <dd>
+                    <div><img src="imgs/1.jpg" width="100%" height="350" /></div>
+                    <span>新春学车送大礼<i>免费</i></span>
+                    <div class="mask pd105">
+                        <a class="edit">编辑</a>
+                        <a class="phone">发送至手机</a>
+                    </div>
+                </dd>
+                <dd>
+                    <div><img src="imgs/1.jpg" width="100%" height="350" /></div>
+                    <span>新春学车送大礼<i>免费</i></span>
+                    <div class="mask pd105">
+                        <a class="edit">编辑</a>
+                        <a class="phone">发送至手机</a>
+                    </div>
+                </dd>
+                <dd>
+                    <div><img src="imgs/1.jpg" width="100%" height="350" /></div>
+                    <span>新春学车送大礼<i>免费</i></span>
+                    <div class="mask pd105">
+                        <a class="edit">编辑</a>
+                        <a class="phone">发送至手机</a>
+                    </div>
+                </dd>
+                <dd>
+                    <div><img src="imgs/1.jpg" width="100%" height="350" /></div>
+                    <span>新春学车送大礼<i>免费</i></span>
+                    <div class="mask pd105">
+                        <a class="edit">编辑</a>
+                        <a class="phone">发送至手机</a>
+                    </div>
+                </dd>
+                <dd>
+                    <div><img src="imgs/1.jpg" width="100%" height="350" /></div>
+                    <span>新春学车送大礼<i>免费</i></span>
+                    <div class="mask pd105">
+                        <a class="edit">编辑</a>
+                        <a class="phone">发送至手机</a>
+                    </div>
+                </dd>
+                <dd>
+                    <div><img src="imgs/1.jpg" width="100%" height="350" /></div>
+                    <span>新春学车送大礼<i>免费</i></span>
+                    <div class="mask pd105">
+                        <a class="edit">编辑</a>
+                        <a class="phone">发送至手机</a>
+                    </div>
+                </dd>
+                <dd>
+                    <div><img src="imgs/1.jpg" width="100%" height="350" /></div>
+                    <span>新春学车送大礼<i>免费</i></span>
+                    <div class="mask pd105">
+                        <a class="edit">编辑</a>
+                        <a class="phone">发送至手机</a>
+                    </div>
+                </dd>
+            </dl>
+        </div>
+
+        <div class="more"><a class="more">查看更多</a></div>
+        
+    </div>
+
+	<div class="footer">
+        <h2>云驾校客服系统</h2>   
+        <span>&copy 2014-2017 幺二幺七 All Rights Reserved</span>
+    </div>
+
+    <div class="phoneMask">
+        <div class="phoneMaskMain">
+            <div class="close"><img src="imgs/close1.png" /></div>
+            <div class="title">发送至手机</div>
+            <dl>
+                <dt><img src="imgs/c.png" width="124" height="124" /></dt>
+                <dd><i>68519</i>在“学车啦助手”微信公众号中发送上方验证码即可获取图片！</dd>
+            </dl>
+        </div>
+    </div>
+
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script>
+        $(function(){
+            $(".flyerList dd").hover(function(){
+                $(this).find(".mask").show();
+            }, function(){
+                $(this).find(".mask").hide();
+            });
+
+            //发送到手机
+            $(".flyerList .phone").click(function(){
+                $(".phoneMask").show();
+                $("body").css({
+                    "overflow": "hidden",
+                    "height": "100%"
+                });
+            });
+            //发送到手机
+            $(".phoneMask .close").click(function(){
+                $(".phoneMask").hide();
+                $("body").attr("style","");
+            });
+        });
+    </script>
+</body>
+</html>

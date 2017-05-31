@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>弹框</title>
+    <style>
+    *{ margin: 0; padding: 0; list-style: none;}
+    .hide{ display: none;}
+    .popIframe{ position: fixed; left: 0; top: 0; width: 100%; height: 100%; overflow:hidden;}
+    </style>
+</head>
+<body>
+    <div class="clickBtn">弹框</div>
+    <div class="popIframe hide" id="popIframe">
+        <iframe src="iframe.html" width="100%" height="100%"></iframe>
+    </div>
+    <script src="jquery-1.8.3.min.js"></script>
+    <script>
+    function closeWindow(){
+        var popIframe = document.getElementById("popIframe");
+        popIframe.style.display = "none";
+        alert("popIframe");
+    }
+    $(function(){
+        $(".clickBtn").click(function(){
+            $(".popIframe").show();
+        });
+
+
+    });
+    </script>
+</body>
+</html>

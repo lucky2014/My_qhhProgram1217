@@ -1,0 +1,246 @@
+*{ margin: 0; padding: 0; font-family: 'microsoft yahei'; font-size: 15px; list-style: none; color: #333;}
+body{ background: #f6f6f6; min-width: 1300px;}
+.hide{ display: none;}
+h3{ font-size: 18px; text-align: center; padding-bottom: 16px; font-weight: normal;}
+.fl{ float: left;}
+.fr{ float: right;}
+.tc{ text-align: center;}
+.hide{ display: none;}
+.red{ color: red;}
+
+/*预览效果*/
+.previewMask,.phoneMask{ position: fixed; left: 0; top: 0; width: 100%; height: 100%; background-color: rgba(32,43,51,.6); 
+text-align: center; display: none;}
+.previewMask .close{display: block; text-align: right; padding: 10px; height: 22px;}
+.previewMask .close a{ width: 24px; height: 22px; float: right; cursor: pointer;}
+.previewMask img{ clear: both;}
+/*发送到手机*/
+.phoneMaskMain{ position: relative; top: 50%; background: #fff; width: 320px; margin:0 auto; height:170px; margin-top: -85px; overflow: hidden; padding: 20px 40px;}
+.phoneMaskMain .title{ font-size: 16px; font-weight: bold; padding-bottom: 20px;}
+.phoneMaskMain dd,.phoneMaskMain dt{ float: left;}
+.phoneMaskMain dd{ width: 140px; text-align: justify; border-left: 1px solid #eee; margin-left: 20px; padding-left: 24px;}
+.phoneMaskMain dd i{ display: block; font-style: normal; text-align: center; line-height: 30px;}
+.phoneMaskMain .close{ position: absolute; right: 14px; top: 14px; cursor: pointer;}
+
+.mainWidth{ width: 1300px; margin: 0 auto; position: relative;}
+
+.header{ background: #fff; border-bottom: 1px solid #f0f0f0; height: 72px; color: #333; line-height: 72px;}
+.header .logo{ position: absolute; left: 0; top: 0; width: 300px; font-size: 22px;}
+.header .headerInfo{ position: absolute; right: 0; top: 0; width: 300px; text-align: right;}
+.header .headerInfo>div.userInfo,.header .headerInfo a{ padding: 0 10px; display: inline-block;}
+.header .headerInfo span{ color: #999; border: 1px solid #ccc; border-radius: 5px; padding: 2px 6px;}
+.header .headerInfo>div.userInfo i{ background: url("../imgs/triangleBlank.png") center center no-repeat; width: 20px; height: 20px;
+display: inline-block; cursor: pointer; vertical-align: top; margin-top: 27px;}
+.header .headerInfo a{ color: #f90; text-decoration: underline;}
+.header .headerInfo>div.userInfo{ position: relative; cursor: pointer;}
+.header .headerInfo>div.userInfo .userList{ position: absolute; border: 1px solid #999; background: #fff; left: 0; top: 60px; min-width: 100px;
+padding: 5px 0;}
+.header .headerInfo>div.userInfo img.em{ position: absolute; left: 70px; top: 54px; z-index: 99; width: 10px; height: 7px;}
+.header .headerInfo>div.userInfo .userList dd{ display: block; height: 26px; line-height: 26px; text-align: center;}
+.header .headerInfo>div.userInfo .userList dd a{ color: #333; cursor: pointer;}
+.header .headerInfo>div.userInfo .userList dd a:hover{ color: #f90; text-decoration: underline;}
+
+.header ul{ width: 900px; margin: 0 auto; padding-top: 6px; height: 66px; line-height: 66px; text-align: center;}
+.header li{ display: inline-block; padding: 0 24px; font-size: 16px; font-weight: bold;}
+.header li.active{ color: #f90; background: url("../imgs/triangle.png") center bottom no-repeat; height: 64px; line-height: 64px; border-bottom: 2px solid #f90;}
+
+.wrap{ background: #fff; margin: 10px auto; padding:20px 50px 50px; width: 1200px;}
+.wrap1{ background: #fff; margin: 20px auto; padding:20px 0 50px; width: 1300px;}
+.crumb,.crumb a{ font-size: 16px; color: #333;}
+
+.table{ border-spacing: 0; border-collapse:collapse; border-left: 1px solid #eee; border-top: 1px solid #eee; text-align: center;}
+.table th,.table td{ border-right: 1px solid #eee; border-bottom: 1px solid #eee; padding:10px 0;}
+.table th{ background: #ccc; color: #fff;}
+
+.footer{ clear: both; text-align: center; color: #ccc; padding-bottom: 40px;}
+.footer h2{ font-size: 22px; color: #444; font-weight: normal; line-height: 60px;}
+.footer span{color: #ccc;}
+
+.tip{ line-height: 26px; padding-top: 20px;}
+
+/*传单*/
+.flyerType{ clear: both; padding: 14px 0; text-align: center;}
+.flyerType a{ cursor: pointer; background: #e5e5e5; color: #333; width: 120px; display: inline-block; padding: 10px 0;
+ border-radius: 6px; margin: 0 12px; font-size: 15px;}
+.flyerType a:hover{ background: #e1e1e1;}
+.flyerType a.active{ background: #ff9f10; color: #fff}
+.flyerType a.active:hover{ background: #ff6f10;}
+
+.srcType{ clear: both; padding-left: 2.5%;}
+.srcType li{ display: inline-block; margin: 0 10px 0 0; cursor: pointer;}
+.srcType li:hover{ text-decoration: underline; color: #f90;}
+.srcType li.active{ text-decoration: underline; color: #f90;}
+
+.flyerList{ clear: both; overflow: hidden; padding:0 0 0 1.8%;}
+.flyerList dl{ overflow: hidden;}
+.flyerList dt,.flyerList dd{ float: left; width: 18%; margin: 16px .8%; cursor: pointer;}
+.flyerList dd{ background: #f0f0f0; position: relative;}
+.flyerList dd>div{ position: relative;}
+.flyerList dd span{ display: block; padding: 10px 12px 12px;}
+.flyerList dd span i{ font-style: normal; color: #f33; display: inline-block; text-align: right; float: right;}
+.flyerList dt{ border: 1px solid #e9e9e9; height: 272px; padding-top: 120px; text-align: center; color: #999;}
+.flyerList dt img{ display: block; text-align: center; margin: 0 auto 40px;}
+.flyerList .mask{ position: absolute; left: 0; top: 0; width: 100%; 
+height: 280px; background-color: rgba(32,43,51,.5); text-align: center; padding-top: 70px; display: none;}
+.flyerList .mask a{ display:block; border-radius: 20px; border: 1px solid #fff; height: 30px; 
+line-height: 30px; text-align: center; color: #fff; width: 70%; margin: 20px auto;}
+.flyerList .mask.pd150{ padding-top: 150px; height: 200px;}
+.flyerList .mask.pd105{ padding-top: 105px; height: 245px;}
+
+.more{ clear: both; text-align: center; margin-top: 30px;}
+.more a{ background: #ff9f10; color: #fff; font-size: 15px; border-radius: 120px; height: 44px; line-height: 44px;
+display: inline-block; margin: 0 auto; min-width: 220px; text-align: center;}
+
+/*编辑*/
+.crumbMain{ overflow: hidden;; background: #fff; padding-bottom: 12px;}
+.crumb1{ clear: both; width: 1300px; margin: 0 auto; position: relative; overflow: hidden;}
+.crumb1 a.back{ position: absolute; left: 0; top: 12px; width: 50px; height: 40px; cursor: pointer; display: block;}
+.crumb1 a.r{ width: 70px; text-align: center; height: 28px; line-height: 28px; margin: 10px 6px 0; float: right; 
+border-radius: 20px; cursor: pointer;}
+.crumb1 a.preview{ border: 1px solid #33ccff; color: #33ccff;}
+.crumb1 a.down{ border: 1px solid #83c960; color: #83c960;}
+.crumb1 a.print{ border: 1px solid #ff9f10; color: #ff9f10;}
+.crumb1 a.save{ border: 1px solid #ff9f10; color: #fff; background: #ff9f10;}
+.crumb1 span{position: absolute; left: 0; top: 10px; width: 50%; left: 25%; text-align: center; display: block; font-size: 16px;}
+
+.editWrap{ width: 1300px; margin: 0 auto; padding-top: 20px; overflow: hidden;}
+.editWrap .theme{ width: 342px; background: #fff; padding-bottom: 15px;}
+.editWrap .theme dt{ background: #dcdcdc; height: 30px; line-height: 30px; text-align: center;}
+.editWrap .theme.fl dd{ float: left; margin: 13px 0 0 13px; height: 230px; cursor: pointer;}
+.editWrap .theme.fl dd.active img{ border: 1px solid #f90;}
+
+.editWrap .theme.fr h5{ height: 30px; line-height: 30px; padding: 4px 0 0 30px;}
+.editWrap .theme.fr dd{ border-top: 1px solid #f6f6f6; padding-bottom: 14px;}
+.editWrap .theme.fr dd>div{ clear: both; padding: 10px 0 0 10px;}
+.editWrap .theme.fr dd>div label,.editWrap .theme.fr>div input{ display: inline-block;}
+.editWrap .theme.fr dd>div label{ width: 116px; text-align: right;}
+.editWrap .theme.fr dd>div input[type="text"]{ width: 180px; border:1px solid #dcdcdc; height: 24px;}
+.editWrap .theme.fr dd>div input[type="submit"],.editWrap .theme.fr dd>div input[type="file"],.editWrap .theme.fr dd>div.tc a{ width:100px; color: #fff; background: #83c960; height: 34px; border: none;
+ border-radius: 20px; margin: 20px auto; display: inline-block; line-height: 34px; margin: 0 12px; cursor: pointer;}
+.editWrap .theme.fr dd>div.tc{ position: relative;}
+.editWrap .theme.fr dd>div input[type="file"]{ position: absolute; left: 50px; top: 8px; opacity: 0; z-index: 333; cursor: pointer;}
+
+ /*上传*/
+.upload span{ width: 280px; border:1px solid #dcdcdc; height: 24px; display: block; margin-left: 20px;}
+.editWrap .theme.fr dd>div.tip{ padding-left: 30px;}
+
+.editMain{ float: left; width: 500px; margin-left: 58px; min-height: 300px;}
+.labels{
+    color: #000000;
+    height: 759px;
+    margin: 0 auto;
+    border: 5px solid #eee;
+    overflow: hidden;
+    position: relative;
+    width: 510px;
+    position:relative;       
+    -webkit-box-shadow:0 2px 8px rgba(0, 0, 0, 0.3), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+       -moz-box-shadow:0 2px 8px rgba(0, 0, 0, 0.3), 0 0 50px rgba(0, 0, 0, 0.1) inset;
+            box-shadow:0 2px 8px rgba(0, 0, 0, 0.3), 0 0 50px rgba(0, 0, 0, 0.1) inset;}
+.labels img.bg{ position: absolute; left: 0; top: 0; width: 100%; z-index: 0;}
+.labels a{
+    background-color: rgba(230, 145, 23, 0.8);
+    color: #FFFFFF;
+	display: none;
+	padding: 5px 0 0;
+    position: absolute !important;
+    text-align: center;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; z-index: 2;
+}
+.labels div{ position: absolute;}
+.labels > a {
+    background-color: rgba(230, 145, 23,  0.9);
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    -webkit-transition: .3s;
+    transition: .3s;
+}
+.labels a:hover {
+    background-color: rgba(128, 128, 128, 0.8);
+}
+.label1 {
+    left: 15px;
+    top: 15px;
+    width: 250px;
+	height: 30px;
+}
+.label2 {
+    left: 45px;
+    top: 73px;
+	width: 280px;
+	height: 36px;
+}
+.label2.text{ font-size: 27px; line-height: 34px; color: #fff; text-align: center; 
+letter-spacing: 5px;}
+.label3 {
+    left: 45px;
+    top: 120px;
+	width: 425px;
+	height: 90px;
+}
+.label3.text{ font-size: 80px; color: #3c260f; text-align: center; line-height: 80px; font-weight: bold;}
+.label4 {
+    left: 48px;
+    top: 442px;
+	width: 418px;
+	height: 128px
+}
+.label4.text table{ border-top: 1px solid #604e37;
+    border-left: 1px solid #604e37;}
+.label4.text table th,.label4.text table td{ background: #fefbe7; border-right: 1px solid #604e37;
+    border-bottom: 1px solid #604e37; padding: 6px 0;}
+.label4.text table th{ color: #3c260f;}
+.label5 {
+    left: 51px;
+    top: 594px;
+	width: 68px;
+	height: 68px
+}
+.label6 {
+    left: 45px;
+    top: 220px;
+	width: 425px;
+	height: 26px
+}
+.label7 {
+    left: 44px;
+    top: 355px;
+	width: 420px;
+	height: 77px
+}
+.label7.text li,.label8.text li{
+    margin-left: 30px; color: #3c260f; font-size: 13px; line-height: 20px; list-style: disc;
+}
+.label8 {
+    left: 136px;
+    top: 595px;
+	width: 333px;
+	height: 77px
+}
+.label8.text li{ padding-left: 84px; position: relative;}
+.label8.text li span{ display: inline-block; width: 80px; position: absolute; left: 0; top: 0;}
+.label9 {
+    left: 25px;
+    top: 705px;
+	width: 480px;
+	height: 33px
+}
+.label9.text{ color: #ffe224; font-size: 12px; line-height: 17px; padding-top: 5px;}
+.label10 {
+    left: 343px;
+    top: 33px;
+	width: 112px;
+	height: 75px
+}
+.label10.text {
+    font-size: 35px; text-align: center; line-height: 68px; color: #3c260f; font-weight: bold;
+}
+
+
+
